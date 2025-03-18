@@ -1,21 +1,41 @@
 <html>
     <title>Forms</title>
     <head>
+        <script>
+    
+    function getData()
+    {
+        var name = document.getElementById("txtName").value;
+        var phone = document.getElementById("txtemail").value;
+        document.getElementById("finalResult").innerHTML = "name: " + name + " number: " + phone;
+    
+    }
+    function checkFilled() {}
+    var inputVal = document.getElementById("txtName").value;
+    if (inputVal.value == "0") 
+    {    inputVal.style.borderColor = "red";
+}
         
+
+        </script>
     </head>
     <body>
         <table>
+            <form>
             <tr>
                 <td>Name</td>
-                <td><input type="text" id="txtName"></td>
+                <td><input type="text" id="txtName" onchange="checkFilled();" required></td> 
             </tr>
             <tr>
-                <td>Number</td>
-                <td><input type="text" id="txtPhone"></td>
+                <td>Email</td>
+                <td><input type="text" id="txtemail" required></td>
             </tr>
+            <td>Agree/Disagree to Terms of Service</td>
+            <td><input type="text" id="txtTOS" required></td>
             <tr>
                 <td colspan="2"><button id="btnSubmit" onClick="getData();">Submit</button></td>
             </tr>
+        </form>
         </table>
     </body>
  </html>

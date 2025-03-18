@@ -5,3 +5,6 @@ background-color: rgb(207, 200, 230);}
 p{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
 .purple{color: rgb(12, 204, 242); font-family: Verdana, Geneva, Tahoma, sans-serif;}
 #specificColor{color: rgb(244, 0, 154);font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 36px;}
+
+.required {
+    border-color: red;}
