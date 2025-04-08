@@ -28,6 +28,10 @@ var movement;
 var movementing;
 var mouthmovement;
 
+var pointX = 360
+var pointY =90
+var pointDirection = 70
+
 
 function setup() {
     createCanvas(400, 450);
