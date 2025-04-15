@@ -30,7 +30,7 @@ var mouthmovement;
 
 var pointX = 360
 var pointY =90
-var pointDirection = 70
+var pointDirection
 
 
 function setup() {
@@ -52,7 +52,7 @@ function setup() {
         }
         x += movement;
     circle(eyeX, eyeY, direction);
-    if(eyeX >= 400 || eyeX <= 0)
+    if(eyeX >= 400 || eyeX <= 1)
         {
             movementing *=-1;
         }
