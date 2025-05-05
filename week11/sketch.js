@@ -26,7 +26,7 @@ function draw() {
   square(700,300,90)
   fill(100,100,50);
   text('Exit Here', 700, 290);
-
+  moveSquare
   if (x >= 800) {
     x = 50;
   }
@@ -57,5 +57,18 @@ function keyPressed() {
     y += 20;
   } else if (key == "w") {
     y -= 20;
+  }
+
+  function moveSquare(){
+    if (key == "d") {
+      x += 20;
+    } else if (key == "a") {
+      x -= 20;
+    }
+    if (key == "s") {
+      y += 20;
+    } else if (key == "w") {
+      y -= 20;
+    }
   }
 }
