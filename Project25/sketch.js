@@ -84,6 +84,10 @@ function draw(){
   textFont('Courier New');
   textSize(40);
   text("Notes Scored " + notescore,60,60);
+  fill(0,255,0);
+  textFont('Courier New');
+  textSize(40);
+  text("Collect notes to complete the song!",100,100)
   
   
 }
